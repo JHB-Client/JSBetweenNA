@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="jsToNAAction()">JS调用NA</button>
+    <br>
+    <label id="NAStrLabel">NAStrShow</label>
+
+    <script>
+        function jsToNAAction() {
+            var passJson = {"model":{"name":"zhangsan", "age":17, "gender":"male"}, 
+            "sel":"showNAToJsStr"};
+            var passJsonStr = JSON.stringify(passJson);
+            window.location.href="test://" + passJsonStr;
+        }
+
+        function showNAToJsStr(str) {
+            var model = JSON.parse(str);
+            var name = model.name;
+            var age = model.age;
+            var gender = model.gender;
+            document.getElementById("NAStrLabel").innerHTML = "name:" + name + "<br>" + "age:" + age + "<br>" + "gender:" + gender;
+        }
+    </script>
+</body>
+</html>
