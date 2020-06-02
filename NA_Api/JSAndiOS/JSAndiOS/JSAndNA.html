@@ -31,8 +31,7 @@
     <button onclick="postStringAction('我是JS的postString传递来的字符串')">传Stirng</button>
     <button onclick="postArrayAction([12,5,8])">传Array</button>
     <button onclick="postDictionaryAction({name:'zhaowu',gender:'male'})">传Dictionary</button><br>
-    <label id="oc2js_label">NA调用JS的反馈</label>
-
+    <label id="oc2js_label">NA调用JS的反馈</label><br>
     <script>
         function postNoParamAction() {
             window.webkit.messageHandlers.noParamsFunction.postMessage(null);

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  JSAndiOS
+//  JSAndiOSSysterm
 //
-//  Created by admin on 2020/5/28.
+//  Created by admin on 2020/6/2.
 //  Copyright © 2020 admin. All rights reserved.
 //
 

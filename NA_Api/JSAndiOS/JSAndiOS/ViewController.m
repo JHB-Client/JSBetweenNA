@@ -100,3 +100,5 @@
     [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"postDictionary"];
 }
 
+@end
+
